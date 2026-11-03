@@ -12,14 +12,14 @@ Legend: `[ Button ]` = button, `[5 ^v]` = number spinner, `[x]` = checkbox,
 
 ```
 +----------------------------------------------------------------------+
-|                                                     [ Theme: Light ] |
+|                                           [ Theme ]  [ Exit X ]      |
 |                                                                      |
-|                        THREE CARD POKER                              |
-|                    Two players vs. the Dealer                        |
+|   THREE CARD POKER                                                   |
+|   Two players. One dealer. Beat the hand.                            |
 |                                                                      |
-|                      [     START GAME     ]   <- primary, focused    |
-|                      [    How to Play     ]   -> opens Rules dialog  |
-|                      [        Exit        ]   -> closes app          |
+|   [  START GAME  ]   How to play ->     <- Start is primary, focused |
+|                                         "How to play" opens Rules    |
+|                                         Exit (top right) closes app  |
 |                                                                      |
 +----------------------------------------------------------------------+
 Transition: screen fades out / next screen fades in.

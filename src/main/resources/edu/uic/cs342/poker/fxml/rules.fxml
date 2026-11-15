@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="edu.uic.cs342.poker.controller.RulesController"
+      styleClass="column,rules">
+    <Label text="How to Play" styleClass="heading"/>
+    <Label text="1. Bet: each player places an Ante of 5 to 25 dollars. A Pair Plus bet of 5 to 25 dollars is optional."/>
+    <Label text="2. Deal: each player and the dealer get three cards. The dealer's cards stay hidden."/>
+    <Label text="3. Decide: Play (a wager equal to the Ante) or Fold (lose the Ante and Pair Plus)."/>
+    <Label text="4. The dealer needs Queen high or better to qualify. If not, Play is returned and the Ante carries over."/>
+    <Label text="5. If the dealer qualifies, the higher hand wins. Ante and Play pay 1 to 1."/>
+    <Label text="Hands, high to low: Straight Flush, Three of a Kind, Straight, Flush, Pair, High Card."/>
+    <Label text="Pair Plus pays: Straight Flush 40 to 1, Three of a Kind 30 to 1, Straight 6 to 1, Flush 3 to 1, Pair 1 to 1."/>
+    <Button text="Close" styleClass="primary" onAction="#handleCloseButton"/>
+</VBox>

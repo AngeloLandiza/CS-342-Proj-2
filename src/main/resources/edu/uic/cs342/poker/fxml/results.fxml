@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="edu.uic.cs342.poker.controller.ResultsController"
+      alignment="TOP_CENTER">
+    <HBox styleClass="bar" alignment="CENTER">
+        <HBox styleClass="bar-side"/>
+        <HBox styleClass="bar-center" alignment="CENTER">
+            <Label text="Round Complete" styleClass="heading"/>
+        </HBox>
+        <HBox styleClass="bar-side,row" alignment="CENTER_RIGHT">
+            <Button text="Rules" onAction="#handleRulesButton"/>
+            <Button text="Theme" onAction="#handleThemeButton"/>
+        </HBox>
+    </HBox>
+    <VBox styleClass="table" alignment="CENTER">
+        <Label text="DEALER" styleClass="felt-text"/>
+        <HBox fx:id="dealerCards" styleClass="cards" alignment="CENTER"/>
+        <HBox styleClass="row" alignment="CENTER">
+            <Label fx:id="dealerLabel" styleClass="felt-text"/>
+            <Label fx:id="qualifyLabel" styleClass="badge"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <VBox styleClass="seat" alignment="CENTER">
+                <Label fx:id="hand1" styleClass="badge"/>
+                <HBox fx:id="cards1" styleClass="cards" alignment="CENTER"/>
+            </VBox>
+            <VBox styleClass="center" alignment="CENTER">
+                <Label fx:id="messageLabel" styleClass="felt-text"/>
+                <Button text="Play Again" styleClass="primary" onAction="#handlePlayAgainButton"/>
+                <Button text="Main Menu" onAction="#handleMainMenuButton"/>
+            </VBox>
+            <VBox styleClass="seat" alignment="CENTER">
+                <Label fx:id="hand2" styleClass="badge"/>
+                <HBox fx:id="cards2" styleClass="cards" alignment="CENTER"/>
+            </VBox>
+        </HBox>
+    </VBox>
+    <HBox styleClass="panels" alignment="CENTER">
+        <VBox styleClass="panel">
+            <HBox styleClass="row" alignment="CENTER_LEFT">
+                <Label text="Player 1" styleClass="heading"/>
+                <Label fx:id="outcome1" styleClass="badge"/>
+                <Label fx:id="total1" styleClass="heading"/>
+            </HBox>
+            <Label fx:id="detail1"/>
+            <Label fx:id="round1" styleClass="heading"/>
+        </VBox>
+        <VBox styleClass="panel">
+            <HBox styleClass="row" alignment="CENTER_LEFT">
+                <Label text="Player 2" styleClass="heading"/>
+                <Label fx:id="outcome2" styleClass="badge"/>
+                <Label fx:id="total2" styleClass="heading"/>
+            </HBox>
+            <Label fx:id="detail2"/>
+            <Label fx:id="round2" styleClass="heading"/>
+        </VBox>
+    </HBox>
+</VBox>

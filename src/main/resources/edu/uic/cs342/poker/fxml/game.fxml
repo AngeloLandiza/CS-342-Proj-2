@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="edu.uic.cs342.poker.controller.GameController"
+      alignment="TOP_CENTER">
+    <HBox styleClass="bar" alignment="CENTER">
+        <HBox styleClass="bar-side" alignment="CENTER_LEFT">
+            <Button text="&lt; Main Menu" onAction="#handleMainMenuButton"/>
+        </HBox>
+        <HBox styleClass="bar-center" alignment="CENTER">
+            <Label fx:id="phaseLabel" styleClass="heading"/>
+        </HBox>
+        <HBox styleClass="bar-side,row" alignment="CENTER_RIGHT">
+            <Button text="Rules" onAction="#handleRulesButton"/>
+            <Button text="Theme" onAction="#handleThemeButton"/>
+        </HBox>
+    </HBox>
+    <HBox fx:id="leaveBox" styleClass="row" alignment="CENTER" visible="false">
+        <Label text="Leave game? Progress will be lost."/>
+        <Button text="Leave" onAction="#handleLeaveButton"/>
+        <Button text="Stay" onAction="#handleStayButton"/>
+    </HBox>
+    <VBox styleClass="table" alignment="CENTER">
+        <Label text="DEALER" styleClass="felt-text"/>
+        <HBox fx:id="dealerCards" styleClass="cards" alignment="CENTER"/>
+        <HBox alignment="CENTER">
+            <VBox styleClass="seat" alignment="CENTER">
+                <HBox styleClass="row" alignment="CENTER">
+                    <Label fx:id="anteChip1" styleClass="chip"/>
+                    <Label fx:id="pairPlusChip1" styleClass="chip"/>
+                    <Label fx:id="playChip1" styleClass="chip"/>
+                </HBox>
+                <HBox fx:id="cards1" styleClass="cards" alignment="CENTER"/>
+            </VBox>
+            <VBox styleClass="center" alignment="CENTER">
+                <Label fx:id="messageLabel" styleClass="felt-text"/>
+                <Button fx:id="actionButton" styleClass="primary" onAction="#handleActionButton"/>
+            </VBox>
+            <VBox styleClass="seat" alignment="CENTER">
+                <HBox styleClass="row" alignment="CENTER">
+                    <Label fx:id="anteChip2" styleClass="chip"/>
+                    <Label fx:id="pairPlusChip2" styleClass="chip"/>
+                    <Label fx:id="playChip2" styleClass="chip"/>
+                </HBox>
+                <HBox fx:id="cards2" styleClass="cards" alignment="CENTER"/>
+            </VBox>
+        </HBox>
+    </VBox>
+    <HBox styleClass="panels" alignment="CENTER">
+        <VBox styleClass="panel">
+            <HBox styleClass="row" alignment="CENTER_LEFT">
+                <Label text="Player 1" styleClass="heading"/>
+                <Label fx:id="status1" styleClass="badge"/>
+                <Label fx:id="winnings1"/>
+            </HBox>
+            <HBox styleClass="row" alignment="CENTER_LEFT">
+                <Label text="ANTE"/>
+                <TextField fx:id="ante1" text="5"/>
+                <Label text="PAIR PLUS"/>
+                <TextField fx:id="pairPlus1" promptText="none"/>
+                <Label text="5 to 25 dollars"/>
+            </HBox>
+            <Label fx:id="info1"/>
+            <HBox styleClass="row">
+                <Button fx:id="play1" text="Play" styleClass="primary" onAction="#handlePlay1Button"/>
+                <Button fx:id="fold1" text="Fold" onAction="#handleFold1Button"/>
+            </HBox>
+        </VBox>
+        <VBox styleClass="panel">
+            <HBox styleClass="row" alignment="CENTER_LEFT">
+                <Label text="Player 2" styleClass="heading"/>
+                <Label fx:id="status2" styleClass="badge"/>
+                <Label fx:id="winnings2"/>
+            </HBox>
+            <HBox styleClass="row" alignment="CENTER_LEFT">
+                <Label text="ANTE"/>
+                <TextField fx:id="ante2" text="5"/>
+                <Label text="PAIR PLUS"/>
+                <TextField fx:id="pairPlus2" promptText="none"/>
+                <Label text="5 to 25 dollars"/>
+            </HBox>
+            <Label fx:id="info2"/>
+            <HBox styleClass="row">
+                <Button fx:id="play2" text="Play" styleClass="primary" onAction="#handlePlay2Button"/>
+                <Button fx:id="fold2" text="Fold" onAction="#handleFold2Button"/>
+            </HBox>
+        </VBox>
+    </HBox>
+</VBox>

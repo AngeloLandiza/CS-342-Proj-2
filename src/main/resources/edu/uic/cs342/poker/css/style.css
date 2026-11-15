@@ -1,0 +1,147 @@
+.root {
+    -fx-font-size: 15px;
+}
+
+.title {
+    -fx-font-size: 44px;
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-font-size: 18px;
+}
+
+.heading {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+.bar {
+    -fx-padding: 10px 20px;
+}
+
+.bar-side {
+    -fx-pref-width: 300px;
+}
+
+.bar-center {
+    -fx-pref-width: 360px;
+}
+
+.row {
+    -fx-spacing: 12px;
+}
+
+.column {
+    -fx-spacing: 14px;
+}
+
+.rules {
+    -fx-padding: 20px;
+}
+
+.welcome {
+    -fx-padding: 130px 0px 0px 0px;
+    -fx-spacing: 90px;
+}
+
+.table {
+    -fx-pref-width: 940px;
+    -fx-max-width: 940px;
+    -fx-padding: 14px 40px;
+    -fx-spacing: 8px;
+    -fx-background-radius: 140px;
+    -fx-border-radius: 140px;
+    -fx-border-width: 4px;
+}
+
+.welcome-table {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 190px;
+}
+
+.seat {
+    -fx-pref-width: 280px;
+    -fx-spacing: 8px;
+}
+
+.center {
+    -fx-pref-width: 300px;
+    -fx-spacing: 10px;
+}
+
+.felt-text {
+    -fx-font-weight: bold;
+}
+
+.chip {
+    -fx-min-width: 64px;
+    -fx-min-height: 64px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 32px;
+    -fx-border-radius: 32px;
+}
+
+.cards {
+    -fx-spacing: 10px;
+    -fx-min-height: 82px;
+}
+
+.card {
+    -fx-min-width: 58px;
+    -fx-min-height: 82px;
+    -fx-alignment: center;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.panels {
+    -fx-padding: 10px 20px;
+    -fx-spacing: 12px;
+}
+
+.panel {
+    -fx-pref-width: 464px;
+    -fx-padding: 12px 16px;
+    -fx-spacing: 8px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-width: 2px;
+}
+
+.badge {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 2px 8px;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+}
+
+.text-field {
+    -fx-pref-width: 64px;
+}
+
+.button {
+    -fx-padding: 7px 18px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.primary {
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-opacity: 0.85;
+}
+
+.button:disabled {
+    -fx-opacity: 0.4;
+}

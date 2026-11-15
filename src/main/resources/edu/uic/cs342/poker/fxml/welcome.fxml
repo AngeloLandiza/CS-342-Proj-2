@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="edu.uic.cs342.poker.controller.WelcomeController"
+      alignment="TOP_CENTER">
+    <HBox styleClass="bar,row" alignment="CENTER_RIGHT">
+        <Button text="Theme" onAction="#handleThemeButton"/>
+        <Button text="Exit" onAction="#handleExitButton"/>
+    </HBox>
+    <HBox styleClass="welcome" alignment="CENTER">
+        <VBox styleClass="column" alignment="CENTER_LEFT">
+            <Label text="Three Card Poker" styleClass="title"/>
+            <Label text="Two players vs. the dealer" styleClass="subtitle"/>
+            <HBox styleClass="row">
+                <Button text="Start Game" styleClass="primary" onAction="#handleStartButton"/>
+                <Button text="How to Play" onAction="#handleRulesButton"/>
+            </HBox>
+        </VBox>
+        <HBox styleClass="table,welcome-table,cards" alignment="CENTER">
+            <Label text="A♠" styleClass="card"/>
+            <Label text="K♥" styleClass="card,card-red"/>
+            <Label text="Q♦" styleClass="card,card-red"/>
+        </HBox>
+    </HBox>
+</VBox>

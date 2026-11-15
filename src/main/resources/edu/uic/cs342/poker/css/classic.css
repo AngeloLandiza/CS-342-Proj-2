@@ -1,0 +1,63 @@
+.root {
+    -fx-background-color: #f5efe3;
+}
+
+.label {
+    -fx-text-fill: #3b3024;
+}
+
+.table {
+    -fx-background-color: #4a7c5d;
+    -fx-border-color: #2f5a40;
+}
+
+.felt-text {
+    -fx-text-fill: white;
+}
+
+.chip {
+    -fx-text-fill: #3b3024;
+    -fx-background-color: #fffaf0;
+    -fx-border-color: #3b3024;
+}
+
+.card {
+    -fx-text-fill: #1a1a1a;
+    -fx-background-color: #fffaf0;
+    -fx-border-color: #3b3024;
+}
+
+.card-red {
+    -fx-text-fill: #b3261e;
+}
+
+.card-back {
+    -fx-text-fill: #3b3024;
+    -fx-background-color: #d8c9ad;
+}
+
+.panel {
+    -fx-background-color: #e6dbc7;
+    -fx-border-color: #3b3024;
+}
+
+.badge {
+    -fx-text-fill: #3b3024;
+    -fx-background-color: #fffaf0;
+    -fx-border-color: #3b3024;
+}
+
+.button {
+    -fx-text-fill: #3b3024;
+    -fx-background-color: #fffaf0;
+    -fx-border-color: #3b3024;
+}
+
+.primary {
+    -fx-text-fill: white;
+    -fx-background-color: #3b3024;
+}
+
+.button:focused {
+    -fx-border-color: #b3261e;
+}
